@@ -1,5 +1,6 @@
 package com.example.hanastudyboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
 //@WebMvcTest //sliceTest 컨트롤러 외에 다른 객체를 호출하지 않음
+@Disabled("Spring Data REST 통합 테스트는 불필요함으로 제외시킴")
 @DisplayName("Data REST - api테스트")
 @SpringBootTest
 @Transactional // test에서 @Transactional어노테이션이 있다면 모두 roll back
