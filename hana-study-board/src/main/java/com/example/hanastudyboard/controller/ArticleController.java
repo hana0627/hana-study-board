@@ -28,7 +28,7 @@ public class ArticleController {
     @GetMapping("/{articleId}")
     public String article(@PathVariable Long articleId, ModelMap map) {
         map.addAttribute("article","article"); //TODO : 구현할 때 실제 데이를 넣어주어야 한다
-        map.addAttribute("articleComment",List.of());
+        map.addAttribute("articleComments",List.of());
 
         return "articles/detail";
     }
